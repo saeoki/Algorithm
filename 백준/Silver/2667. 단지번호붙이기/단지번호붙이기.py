@@ -14,6 +14,7 @@ def dfs(x,y) :
   
 n = int(input())
 graph = []
+count_list = []
 number = 1
 for i in range(n) :
   graph.append(list(map(int, input())))
@@ -25,7 +26,6 @@ for i in range(n) :
       
 print(number-1)
 
-count_list = []
 for i in range(2, number + 1) :
   flat = sum(graph, [])
   count_list.append(flat.count(i))
