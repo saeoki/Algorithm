@@ -1,4 +1,8 @@
-a, b = map(int, input().split())
-a = reversed(str(a))
-b = reversed(str(b))
-print(max(int(''.join(a)), int(''.join(b))))
+a, b = input().split()
+aa = a[::-1]
+bb = b[::-1]
+
+if aa > bb :
+    print(aa)
+else :
+    print(bb)
