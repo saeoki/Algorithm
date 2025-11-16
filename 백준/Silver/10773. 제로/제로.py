@@ -1,10 +1,10 @@
 k = int(input())
 stack = []
 for i in range(k) :
-    checker = int(input())
-    if checker == 0 :
+    n = int(input())
+    if n == 0 :
         stack.pop()
     else :
-        stack.append(checker)
+        stack.append(n)
 
 print(sum(stack))
