@@ -14,17 +14,18 @@ test case)
 45
 50
 """
+from collections import deque
 n = int(input())
 n_list = []
 for _ in range(n) :
     n_list.append(int(input()))
 
-n_list.sort()
+n_list = deque(sorted(n_list))
 max = n_list[-1]
 for _ in range(n) :
     parallel = n_list[0] * len(n_list)
     if parallel > max :
         max = parallel
-    n_list.pop(0)
+    n_list.popleft()
 
 print(max)
